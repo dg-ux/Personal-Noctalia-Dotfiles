@@ -15,12 +15,13 @@ The projects below help make this setup possible. Please consider starring them 
 
 
 The configuration focuses on keeping the desktop visually polished while remaining practical for everyday use.
-# Features
-Unified theming with Noctalia
-10 noctalia bar presets
-customised zsh prompt with starship
-2 custom colour palettes
-Game-mode
+## Features
+
+- Unified theming with Noctalia
+- 10 Noctalia bar presets
+- Customized Zsh prompt with Starship
+- 2 custom color palettes
+- Game mode
 # Cool Night
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/613646d9-2a75-4ceb-9c12-0e96bf958d53" />
 # Dusky-Linux-Default
