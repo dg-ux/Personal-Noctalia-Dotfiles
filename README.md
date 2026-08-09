@@ -2,6 +2,7 @@
 A personal Noctalia Dotfiles that allows you to review
 # Note: These Dotfiles are not actively maintained. They are not intended to be a plug-and-play setup and come with no warranty. ⚠️Use at your own risk ⚠️.
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/638d143c-275c-4b76-a833-21ff4b7bc934" />
+
 ## Credits
 
 The projects below help make this setup possible. Please consider starring them if you find this setup useful.
@@ -27,6 +28,7 @@ The configuration focuses on keeping the desktop visually polished while remaini
 
 # Dusky Linux Default
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3df90750-0795-4ccf-a9ad-0db4919f7e7b" />
+
 ## Requirements
 
 This configuration is designed for the following environment:
