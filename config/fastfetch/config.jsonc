@@ -1,0 +1,81 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+    "key": {
+      "width": 12
+    },
+    "size": {
+      "binaryPrefix": "jedec"
+    },
+    "separator": ""
+  },
+  "logo": {
+    "type": "kitty-direct",
+    "source": "~/.config/fastfetch/your image.png",
+    "width": 20,
+    "height": 10
+  },
+  "modules": [
+    {
+      "type": "os",
+      "key": "OS",
+      "format": "{name}"
+    },
+    {
+      "type": "kernel",
+      "key": "KERNEL",
+      "format": "{release}"
+    },
+    {
+      "type": "packages",
+      "key": "PACKAGES"
+    },
+    {
+      "type": "shell",
+      "key": "SHELL",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "terminal",
+      "key": "TERMINAL",
+      "format": "{pretty-name} {version}"
+    },
+    {
+      "type": "wm",
+      "key": "WM",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "uptime",
+      "key": "UP-TIME"
+    },
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "format": "{name} ({cores-logical})"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": "RAM",
+      "format": "{used} / {total} ({percentage})"
+    },
+    {
+      "type": "disk",
+      "key": "DISK",
+      "folders": [
+        "/"
+      ],
+      "format": "{size-used} / {size-total} ({size-percentage})"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[33m󰮯 \u001b[32m󰊠 \u001b[34m󰊠 \u001b[31m󰊠 \u001b[36m󰊠 \u001b[35m󰊠 \u001b[37m󰊠 \u001b[97m󰊠"
+    }
+  ]
+}
