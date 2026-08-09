@@ -2,13 +2,16 @@
 A personal Noctalia Dotfiles that allows you to review
 # Note: These Dotfiles are not actively maintained. They are not intended to be a plug-and-play setup and come with no warranty. Use at your own risk.
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/638d143c-275c-4b76-a833-21ff4b7bc934" />
-The desktop is built around **Hyprland** and **Noctalia V5**, with Noctalia handling the desktop shell and Hyprland handling window management and compositing. Please consider star the projects below for making this setup beautiful
-https://github.com/noctalia-dev/noctalia Lightweight Wayland shell with a lot of customisation capabilities
-https://github.com/LazyVim/LazyVim Neovim distro used here 
-https://github.com/ADIOR-enigma/refox theming Firefox and websites using pywal (should be install manually)
-https://github.com/josean-dev/dev-environment-files CoolNight theme build based on this project
-https://github.com/dusklinux/dusky Dusky Linux theme build based on the default wallpaper of this project
-https://starship.rs/ terminal prompt customisation
+## Credits
+
+The projects below help make this setup possible. Please consider starring them if you find this setup useful.
+
+- [Noctalia](https://github.com/noctalia-dev/noctalia) — Lightweight Wayland shell with extensive customization capabilities.
+- [LazyVim](https://github.com/LazyVim/LazyVim) — Neovim distribution used for my development environment.
+- [ADIOR-enigma](https://github.com/ADIOR-enigma) — Firefox and web-site theming used in this setup. *(Should be installed manually.)*
+- [dev-environment-files](https://github.com/josean-dev/dev-environment-files) — CoolNight theme inspiration and configuration.
+- [Dusky Linux](https://github.com/duskylinux/dusky) — Theme build based on the default wallpaper from this project.
+- [Starship](https://starship.rs/) — Terminal prompt customization.
 
 
 The configuration focuses on keeping the desktop visually polished while remaining practical for everyday use.
