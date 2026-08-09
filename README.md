@@ -24,7 +24,7 @@ The configuration focuses on keeping the desktop visually polished while remaini
 - Game mode
 # Cool Night Redesigned
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/613646d9-2a75-4ceb-9c12-0e96bf958d53" />
-# Dusky-Linux-Default 
+# Dusky Linux Default
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3df90750-0795-4ccf-a9ad-0db4919f7e7b" />
 ## Requirements
 
