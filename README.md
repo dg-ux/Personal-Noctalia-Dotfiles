@@ -8,7 +8,7 @@ The projects below help make this setup possible. Please consider starring them 
 
 - [Noctalia](https://github.com/noctalia-dev/noctalia) — Lightweight Wayland shell with extensive customization capabilities.
 - [LazyVim](https://github.com/LazyVim/LazyVim) — Neovim distribution used for my development environment.
-- [ADIOR-enigma](https://github.com/ADIOR-enigma) — Firefox and web-site theming used in this setup. *(Should be installed manually.)*
+- [ADIOR-enigma](https://github.com/ADIOR-enigma/refox) — Firefox and web-site theming used in this setup. *(Should be installed manually.)*
 - [dev-environment-files](https://github.com/josean-dev/dev-environment-files) — CoolNight theme inspiration and configuration.
 - [Dusky Linux](https://github.com/duskylinux/dusky) — Theme build based on the default wallpaper from this project.
 - [Starship](https://starship.rs/) — Terminal prompt customization.
