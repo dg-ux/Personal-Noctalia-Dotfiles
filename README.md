@@ -80,5 +80,5 @@ Control Center
 <img width="1352" height="715" alt="image" src="https://github.com/user-attachments/assets/321a91f4-b591-4d52-ae42-42bca14dd3c4" />
 
 Lockscreen
-<img width="1365" height="768" alt="image" src="https://github.com/user-attachments/assets/aaf77016-e8dc-4243-8161-539a9157b8e3" />
+<img width="1365" height="768" alt="image" src="https://github.com/user-attachments/assets/f64cf63e-5b31-427e-90d1-35cff9056c27" />
 
