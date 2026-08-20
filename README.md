@@ -65,6 +65,7 @@ The following components are required for the configuration:
 - Qt5ct / Qt6ct
 - nwg-look
 - Papirus
+- Firacode Nerd Font, Inter font, Noto Sans all variants
 - A working graphics driver compatible with Hyprland
 
 > ⚠️The requirements describe the environment for which this configuration was designed.
