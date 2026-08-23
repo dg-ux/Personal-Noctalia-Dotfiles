@@ -8,7 +8,7 @@ local fileManager = "thunar"
 local menu        = "hyprlauncher"
 local browser     = "google-chrome-stable"
 local calculator  = "qalculate-gtk"
-local screenshot  = "hyprshot -m region -z --clipboard-only --raw | satty --filename -"
+local screenshot  = "hyprshot -z -m region --clipboard-only --raw | satty --filename - --copy-command wl-copy --early-exit"
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
@@ -91,6 +91,38 @@ hl.window_rule({
     match = { class = "^(com.gabm.satty)$" },
     float = true,
     center = true
+})
+
+-- 1. Firefox Picture-in-Picture Floating Rule
+hl.window_rule({
+	name = "firefox-pip-floating",
+	match = {
+		class = "firefox",
+		title = "^Picture-in-Picture$",
+	},
+	float = true,
+})
+
+-- 2. Block Password Managers from Screen Capture
+hl.window_rule({
+	name = "keepassxc-screen-share-block",
+	match = { class = "org.keepassxc.KeePassXC" },
+	no_screen_share = true,
+})
+
+hl.window_rule({
+	name = "secrets-screen-share-block",
+	match = { class = "org.gnome.World.Secrets" },
+	no_screen_share = true,
+})
+
+-- 3. Noctalia Floating Settings Window with Custom Size
+hl.window_rule({
+	name = "noctalia-settings-float",
+	match = { class = "dev.noctalia.Noctalia" },
+	float = true,
+	size = { 850, 700 }, -- Adjust acc to your choice
+	center = true,
 })
 
 --Noctalia Keybinds--
