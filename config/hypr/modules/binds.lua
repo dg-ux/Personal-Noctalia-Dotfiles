@@ -88,9 +88,10 @@ hl.bind("XF86Calculator", hl.dsp.exec_cmd(calculator), { description = "Open Cal
 hl.bind("PRINT", hl.dsp.exec_cmd(screenshot))
 --window rules
 hl.window_rule({
-    match = { class = "^(com.gabm.satty)$" },
-    float = true,
-    center = true
+	match = { class = "^org\\.satty\\.satty$" },
+	float = true,
+	size = { 800, 600 },
+	center = true,
 })
 
 -- 1. Firefox Picture-in-Picture Floating Rule
