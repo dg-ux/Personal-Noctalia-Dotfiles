@@ -34,6 +34,7 @@ The configuration focuses on keeping the desktop visually polished while remaini
 
 # Ariadne
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/43873b7c-ace4-4109-8e49-6bf793ab60ad" />
+
 # Anime
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/561fe679-d042-4ed5-94f4-0422f8fa856d" />
 
