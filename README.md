@@ -29,6 +29,17 @@ The configuration focuses on keeping the desktop visually polished while remaini
 # Dusky Linux Default
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/3df90750-0795-4ccf-a9ad-0db4919f7e7b" />
 
+# NightFox
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/53d42cc6-e3f7-4509-b2d9-a2bcdef60527" />
+
+# Ariadne
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/43873b7c-ace4-4109-8e49-6bf793ab60ad" />
+# Anime
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/561fe679-d042-4ed5-94f4-0422f8fa856d" />
+
+# Everblush
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/668b61fa-6614-4cb9-9850-88c8bfdf90be" />
+
 ## Requirements
 
 This configuration is designed for the following environment:
