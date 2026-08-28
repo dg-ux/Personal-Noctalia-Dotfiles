@@ -46,7 +46,7 @@ The configuration keeps the desktop visually polished while remaining practical 
 
 This configuration is designed for the following environment:
 
-- **OS:** Arch Linux
+- **OS:** Arch Linux or Cachy OS
 - **Session:** Wayland
 - **Compositor:** Hyprland
 - **Desktop Shell:** Noctalia Shell v5
