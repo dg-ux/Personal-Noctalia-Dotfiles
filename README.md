@@ -16,11 +16,11 @@ The projects below help make this setup possible. Please consider starring them 
 - [Starship](https://starship.rs/) — Terminal prompt customization.
 
 
-The configuration focuses on keeping the desktop visually polished while remaining practical for everyday use.
+The configuration keeps the desktop visually polished while remaining practical for everyday use.
 ## Features
 
 - Unified theming with Noctalia
-- 10 Noctalia bar presets
+- 13 Noctalia bar presets
 - Customised Zsh prompt with Starship
 - 6 custom colour palettes
 - Game mode
