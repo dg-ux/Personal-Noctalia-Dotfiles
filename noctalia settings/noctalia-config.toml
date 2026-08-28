@@ -1,5 +1,8 @@
+config_version = 13
+
 [bar]
 order = [
+    "Default",
     "top",
     "minimal",
     "stelic-sys",
@@ -11,8 +14,13 @@ order = [
     "task-bar",
     "simple-shrinker",
     "sane",
-    "Floater-squircle"
+    "Floater-squircle",
+    "Ultra-minimal"
 ]
+
+    [bar.Default]
+    enabled = false
+    start = [ "launcher", "workspaces" ]
 
     [bar.Floater-squircle]
     background_opacity = 0.0
@@ -71,6 +79,22 @@ order = [
     margin_ends = 50
     start = [ "launcher", "wallpaper", "workspaces", "cpu" ]
 
+    [bar.Ultra-minimal]
+    center = [ "date", "spacer_1", "clock" ]
+    color = "primary"
+    enabled = false
+    end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "session" ]
+    font_family = "JetBrainsMono NFP"
+    font_weight = 400
+    hover_highlight = false
+    icon_color = "primary"
+    margin_edge = 2
+    margin_ends = 2
+    radius = 6
+    scale = 0.90000000596046448
+    start = [ "workspaces" ]
+    thickness = 25
+
     [bar.duel-bar-part-1]
     background_opacity = 0.79999998211860657
     capsule = true
@@ -107,6 +131,7 @@ order = [
     end = []
     margin_edge = 0
     margin_ends = 0
+    panel_overlap = 0
     position = "left"
     reserve_space = false
     smart_auto_hide = true
@@ -121,18 +146,7 @@ order = [
     capsule_opacity = 0.79999998211860657
     capsule_radius = 8
     enabled = false
-    end = [
-        "brightness",
-        "recorder_2",
-        "tray",
-        "network",
-        "bluetooth",
-        "notifications",
-        "clipboard",
-        "volume",
-        "theme_mode",
-        "session"
-    ]
+    end = [ "brightness", "tray", "network", "bluetooth", "notifications", "clipboard", "volume", "theme_mode", "session" ]
     margin_edge = 5
     margin_ends = 5
     shadow = false
@@ -147,7 +161,6 @@ order = [
     color = "primary"
     enabled = false
     end = [
-        "recorder_3",
         "tray",
         "notifications",
         "clipboard",
@@ -168,7 +181,6 @@ order = [
     capsule = true
     capsule_fill = "surface"
     capsule_foreground = "primary"
-    capsule_opacity = 0.79999998211860657
     capsule_padding = 10.0
     capsule_radius = 20
     capsule_thickness = 0.84999998472630978
@@ -251,7 +263,6 @@ order = [
     enabled = false
     end = [
         "screenshot",
-        "recorder",
         "tray",
         "notifications",
         "clipboard",
@@ -263,7 +274,7 @@ order = [
         "session"
     ]
     margin_edge = 5
-    start = [ "launcher", "wallhaven", "workspaces", "audio_visualizer" ]
+    start = [ "launcher", "workspaces", "audio_visualizer" ]
 
 [brightness]
 enable_ddcutil = true
@@ -299,6 +310,8 @@ widget_order = [
     cx = 683.0
     cy = 384.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "fancy_audio_visualizer"
 
@@ -312,6 +325,8 @@ widget_order = [
     cx = 1102.0
     cy = 384.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -327,6 +342,8 @@ widget_order = [
     cx = 269.0
     cy = 384.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -343,6 +360,8 @@ widget_order = [
     cx = 1163.0
     cy = 656.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "media_player"
 
@@ -357,6 +376,8 @@ widget_order = [
     cx = 155.0
     cy = 672.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "weather"
 
@@ -372,6 +393,8 @@ widget_order = [
     cx = 683.0
     cy = 384.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = -0.0
     type = "fancy_audio_visualizer"
 
@@ -400,6 +423,8 @@ widget_order = [
     cy = 384.0
     flip_x = true
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = -0.0
     type = "fancy_audio_visualizer"
 
@@ -429,7 +454,6 @@ icon_size = 30
 inactive_opacity = 0.99999997764825821
 inactive_scale = 1.0
 launcher_position = "start"
-margin_edge = 5
 pinned = [
     "google-chrome",
     "firefox",
@@ -438,15 +462,11 @@ pinned = [
     "libreoffice-startcenter",
     "tauonmb",
     "qalculate-gtk",
-    "code",
-    "io.github.bluemancz.hyprmod",
-    "nvim"
+    "nvim",
+    "io.github.bluemancz.hyprmod"
 ]
 reserve_space = false
 show_dots = true
-
-[hooks]
-wallpaper_changed = "~/.local/bin/noctalia-pywal"
 
 [idle]
 behavior_order = [ "screen-off", "lock", "lock-and-suspend" ]
@@ -499,13 +519,15 @@ widget_order = [
     cx = 683.0
     cy = 683.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
         background_color = "surface"
         background_opacity = 0.80000000000000004
-        background_radius = 12.0
+        background_radius = 20.0
         center_password_text = true
         input_opacity = 0.80000000000000004
         input_radius = 12.0
@@ -519,17 +541,19 @@ widget_order = [
         show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 144.0
-    box_width = 304.0
+    box_height = 112.0
+    box_width = 288.0
     cx = 683.0
     cy = 288.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "clock"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
         background = false
-        font_family = "Font Awesome 7 Brands"
+        font_family = "SF Pro Display"
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
     box_height = 256.0
@@ -537,12 +561,15 @@ widget_order = [
     cx = 683.0
     cy = 368.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "label"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
         background_color = "surface"
         background_opacity = 0.80000000000000004
+        background_radius = 20
         title = ""
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
@@ -551,12 +578,14 @@ widget_order = [
     cx = 683.0
     cy = 352.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "clock"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
         background = false
-        font_family = "Font Awesome 7 Free"
+        font_family = "SF Pro Text"
         format = "{:%a, %b %d}"
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
@@ -565,11 +594,15 @@ widget_order = [
     cx = 683.0
     cy = 368.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = -0.15490454435348511
     type = "label"
 
         [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background_color = "surface"
         background_opacity = 0.84999999999999998
+        background_radius = 20
         title = ""
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
@@ -578,6 +611,8 @@ widget_order = [
     cx = 603.0
     cy = 432.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "volume"
 
@@ -590,6 +625,8 @@ widget_order = [
     cx = 759.5625
     cy = 429.509765625
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "sysmon"
 
@@ -604,6 +641,8 @@ widget_order = [
     cx = 1131.0
     cy = 384.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -618,6 +657,8 @@ widget_order = [
     cx = 235.0
     cy = 384.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "audio_visualizer"
 
@@ -628,17 +669,20 @@ widget_order = [
 
     [lockscreen_widgets.widget.lockscreen-widget-000000000000000a]
     box_height = 32.0
-    box_width = 176.0
+    box_width = 144.0
     cx = 683.0
     cy = 192.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "label"
 
         [lockscreen_widgets.widget.lockscreen-widget-000000000000000a.settings]
         background = false
-        font_family = "FiraCode Nerd Font SemBd"
-        title = "L o c k e d"
+        font_family = "SF Mono"
+        shadow = false
+        title = "L O C K E D"
 
     [lockscreen_widgets.widget.lockscreen-widget-000000000000000e]
     box_height = 144.0
@@ -646,6 +690,8 @@ widget_order = [
     cx = 1203.0
     cy = 656.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "media_player"
 
@@ -658,6 +704,8 @@ widget_order = [
     cx = 575.0
     cy = 192.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "button"
 
@@ -670,9 +718,11 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000011]
     box_height = 0.0
     box_width = 0.0
-    cx = 791.0
+    cx = 795.0
     cy = 192.0
     output = "DP-1"
+    placement_height = 768.0
+    placement_width = 1366.0
     rotation = 0.0
     type = "button"
 
@@ -703,7 +753,7 @@ video_directory = "/home/dungeonguard/Videos"
 color_range = "full"
 
 [plugins]
-auto_update = false
+auto_update = "none"
 enabled = []
 
     [[plugins.source]]
@@ -719,12 +769,11 @@ enabled = []
     name = "community"
 
 [shell]
-avatar_path = "/home/dungeonguard/Pictures/profile/profile.png"
-card_borders = false
-font_family = "Inter"
+avatar_path = "/home/dungeonguard/Pictures/Profile/profile.png"
+corner_radius_scale = 1.5000000223517418
+font_family = "SF Pro Text"
 password_style = "random"
 polkit_agent = true
-popup_borders = false
 time_format = "{:%I:%M%p}"
 
     [shell.launcher]
@@ -741,7 +790,6 @@ time_format = "{:%I:%M%p}"
         global = false
 
     [shell.panel]
-    borders = false
     control_center_placement = "floating"
     session_placement = "floating"
     session_position = "center"
@@ -752,52 +800,17 @@ time_format = "{:%I:%M%p}"
     [shell.screenshot]
     save_to_file = false
 
-[templates.nvim-base16]
-input_path = "~/.config/nvim/lua/matugen-template.lua"
-output_path = "~/.config/nvim/lua/matugen.lua"
-post_hook = "pkill -SIGUSR1 nvim"
-
 [theme]
 builtin = "Rosé Pine"
 community_palette = "Everforest Material"
-custom_palette = "Cool-Night"
+custom_palette = "Nightfox"
 mode = "dark"
-source = "wallpaper"
+source = "custom"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [
-        "btop",
-        "cava",
-        "foot",
-        "gtk3",
-        "gtk4",
-        "ghostty",
-        "hyprland",
-        "kcolorscheme",
-        "kitty",
-        "labwc",
-        "qt",
-        "starship"
-    ]
-    community_ids = [
-        "pi-agent",
-        "tauon",
-        "pywalfox",
-        "discord",
-        "nchat",
-        "neovim",
-        "vscode",
-        "heroiclauncher",
-        "prismlauncher",
-        "zathura",
-        "hyprtoolkit",
-        "papirus-icons",
-        "snappy-switcher",
-        "bat",
-        "lazygit",
-        "yazi"
-    ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "starship" ]
+    community_ids = [ "tauon", "pywalfox", "neovim", "vscode", "zathura", "hyprtoolkit", "papirus-icons", "bat", "lazygit", "yazi" ]
 
 [wallpaper]
 directory_dark = "/home/dungeonguard/Pictures/Wallpapers/Dark"
@@ -813,18 +826,6 @@ transition_on_startup = true
 
     [wallpaper.monitors.DP-1]
     path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wp12211591-cozy-pc-wallpapers_upscayl_2x_digital-art-4x.png"
-
-    [[wallpaper.favorite]]
-    custom_palette = "Cool-Night"
-    palette_source = "custom"
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/CoolNight.png"
-    theme_mode = "dark"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wp12211591-cozy-pc-wallpapers_upscayl_2x_digital-art-4x.png"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -852,21 +853,9 @@ transition_on_startup = true
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/@003.jpg"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-content"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
     path = "/home/dungeonguard/Pictures/Wallpapers/Dark/dark-style-sky-nighttime.jpg"
     theme_mode = "dark"
     wallpaper_scheme = "m3-fruit-salad"
-
-    [[wallpaper.favorite]]
-    palette_source = "wallpaper"
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/purple_leaves.png"
-    theme_mode = "dark"
-    wallpaper_scheme = "m3-content"
 
     [[wallpaper.favorite]]
     community_palette = "Everforest Material"
@@ -881,15 +870,39 @@ transition_on_startup = true
     wallpaper_scheme = "m3-tonal-spot"
 
     [[wallpaper.favorite]]
+    community_palette = "Everforest Material"
+    palette_source = "community"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/a_close_up_of_leaves.jpg"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
     custom_palette = "Dusky-Linux-Default"
     palette_source = "custom"
     path = "/home/dungeonguard/Pictures/Wallpapers/Dark/dusk_default.jpg"
     theme_mode = "dark"
 
     [[wallpaper.favorite]]
-    community_palette = "Everforest Material"
-    palette_source = "community"
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/a_close_up_of_leaves.jpg"
+    palette_source = "wallpaper"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wallpaper.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/purple_leaves.png"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Nightfox"
+    palette_source = "custom"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wp12211591-cozy-pc-wallpapers_upscayl_2x_digital-art-4x.png"
+    theme_mode = "dark"
+
+    [[wallpaper.favorite]]
+    custom_palette = "Ariadne"
+    palette_source = "custom"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/@003.jpg"
     theme_mode = "dark"
 
 [widget.active_window]
@@ -901,9 +914,11 @@ title_scroll = "on_hover"
 
 [widget.audio_visualizer]
 color_2 = "tertiary"
+interactive = false
 width = 125
 
 [widget.clipboard]
+color = "on_surface"
 enabled = true
 
 [widget.clock]
@@ -917,6 +932,7 @@ enabled = true
 glyph = "navigation-filled"
 
 [widget.media]
+color = "primary"
 enabled = true
 hide_album_art = true
 hide_when_no_media = true
@@ -925,19 +941,11 @@ min_length = 0
 title_scroll = "on_hover"
 
 [widget.network]
-enabled = false
+color = "tertiary"
 
 [widget.notifications]
+color = "on_surface"
 hide_when_no_unread = true
-
-[widget.recorder]
-type = "noctalia/screen_recorder:recorder"
-
-[widget.recorder_2]
-type = "noctalia/screen_recorder:recorder"
-
-[widget.recorder_3]
-type = "noctalia/screen_recorder:recorder"
 
 [widget.spacer_1]
 type = "spacer"
@@ -954,8 +962,8 @@ scale = 1.6500000000000001
 detached_panel = true
 drawer = true
 
-[widget.wallhaven]
-type = "noctalia/wallhaven:wallhaven"
+[widget.volume]
+color = "secondary"
 
 [widget.wallhaven_2]
 type = "noctalia/wallhaven:wallhaven"
@@ -964,6 +972,7 @@ type = "noctalia/wallhaven:wallhaven"
 enabled = true
 
 [widget.weather]
+color = "error"
 show_condition = false
 
 [widget.workspaces]
