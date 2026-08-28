@@ -1,7 +1,8 @@
 # Personal-Noctalia-Dotfiles
 A personal Noctalia dotfiles repository that allows you to review
 # Note: These Dotfiles are not actively maintained. They are not intended to be a plug-and-play setup and come with no warranty. ⚠️Use at your own risk ⚠️.
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/638d143c-275c-4b76-a833-21ff4b7bc934" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0bbcfa4e-ad30-45bd-aec3-a74d3525282b" />
+
 
 ## Credits
 
@@ -83,8 +84,8 @@ The following components are required for the configuration:
 > ⚠️The requirements describe the environment for which this configuration was designed.
 ## 📸 Screenshots
 Desktop
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c0d79d51-6eff-46bb-8458-7c68b302ed15" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b6196ca5-183a-43ce-8585-d70aee24adb3" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7bb942e5-00d3-40b1-9da8-3d6b01f24e7e" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/26dd284e-8a6a-4fbb-8867-60fab254b939" />
 
 Wallpaper picker
 <img width="1352" height="715" alt="image" src="https://github.com/user-attachments/assets/a016f1a9-6652-457d-aeb8-2ebfd696e410" />
@@ -93,5 +94,5 @@ Control Center
 <img width="1352" height="715" alt="image" src="https://github.com/user-attachments/assets/321a91f4-b591-4d52-ae42-42bca14dd3c4" />
 
 Lockscreen
-<img width="1365" height="768" alt="image" src="https://github.com/user-attachments/assets/f64cf63e-5b31-427e-90d1-35cff9056c27" />
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/cdf573a2-3209-47ec-bbbc-2ebbe8964a4d" />
 
