@@ -15,7 +15,8 @@ order = [
     "simple-shrinker",
     "sane",
     "Floater-squircle",
-    "Ultra-minimal"
+    "Ultra-minimal",
+    "box-bar"
 ]
 
     [bar.Default]
@@ -94,6 +95,22 @@ order = [
     scale = 0.90000000596046448
     start = [ "workspaces" ]
     thickness = 25
+
+    [bar.box-bar]
+    background_opacity = 0.89999997988343239
+    capsule = true
+    capsule_fill = "on_primary"
+    capsule_radius = 0
+    capsule_thickness = 0.69999998807907104
+    center = [ "clock", "notifications" ]
+    enabled = false
+    end = [ "tray", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+    margin_edge = 5
+    margin_ends = 5
+    padding = 5
+    radius = 0
+    start = [ "launcher", "workspaces" ]
+    thickness = 35
 
     [bar.duel-bar-part-1]
     background_opacity = 0.79999998211860657
@@ -238,22 +255,13 @@ order = [
     center = []
     concave_edge_corners = false
     enabled = false
-    end = [
-        "tray",
-        "notifications",
-        "clipboard",
-        "network",
-        "bluetooth",
-        "volume",
-        "brightness",
-        "battery",
-        "clock",
-        "session"
-    ]
+    end = [ "tray", "clipboard", "volume", "clock", "session" ]
     margin_ends = 0
     position = "bottom"
     radius = 0
+    scale = 1.300000011920929
     start = [ "launcher", "taskbar" ]
+    thickness = 48
 
     [bar.top]
     background_opacity = 0.79999998211860657
@@ -281,7 +289,7 @@ enable_ddcutil = true
 sync_all_monitors = true
 
 [control_center]
-hidden_tabs = [ "power", "bluetooth" ]
+hidden_tabs = [ "bluetooth" ]
 sidebar_section = "none"
 
     [control_center.calendar]
@@ -289,70 +297,12 @@ sidebar_section = "none"
 
 [desktop_widgets]
 schema_version = 2
-widget_order = [
-    "desktop-widget-0000000000000008",
-    "desktop-widget-0000000000000001",
-    "desktop-widget-0000000000000004",
-    "desktop-widget-0000000000000005",
-    "desktop-widget-0000000000000006",
-    "desktop-widget-0000000000000007",
-    "desktop-widget-0000000000000009"
-]
+widget_order = [ "desktop-widget-0000000000000006", "desktop-widget-0000000000000007" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
-
-    [desktop_widgets.widget.desktop-widget-0000000000000001]
-    box_height = 0.0
-    box_width = 0.0
-    cx = 683.0
-    cy = 384.0
-    output = "DP-1"
-    placement_height = 768.0
-    placement_width = 1366.0
-    rotation = 0.0
-    type = "fancy_audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
-        background = false
-        visualization_mode = "rings"
-
-    [desktop_widgets.widget.desktop-widget-0000000000000004]
-    box_height = 256.0
-    box_width = 528.0
-    cx = 1102.0
-    cy = 384.0
-    output = "DP-1"
-    placement_height = 768.0
-    placement_width = 1366.0
-    rotation = 0.0
-    type = "audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
-        background = false
-        bands = 32
-        color_2 = "secondary"
-        show_when_idle = false
-
-    [desktop_widgets.widget.desktop-widget-0000000000000005]
-    box_height = 256.0
-    box_width = 528.0
-    cx = 269.0
-    cy = 384.0
-    output = "DP-1"
-    placement_height = 768.0
-    placement_width = 1366.0
-    rotation = 0.0
-    type = "audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
-        background = false
-        bands = 32
-        color_1 = "secondary"
-        color_2 = "primary"
-        show_when_idle = false
 
     [desktop_widgets.widget.desktop-widget-0000000000000006]
     box_height = 160.0
@@ -386,65 +336,6 @@ widget_order = [
         font_family = "FiraCode Nerd Font"
         shadow = false
         show_forecast = false
-
-    [desktop_widgets.widget.desktop-widget-0000000000000008]
-    box_height = 672.0
-    box_width = 688.0
-    cx = 683.0
-    cy = 384.0
-    output = "DP-1"
-    placement_height = 768.0
-    placement_width = 1366.0
-    rotation = -0.0
-    type = "fancy_audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000008.settings]
-        background = false
-        background_color = "surface"
-        background_opacity = 0.80000000000000004
-        background_padding = 10
-        background_radius = 12
-        bar_width = 0.59999999999999998
-        bloom_intensity = 0.5
-        fade_when_idle = true
-        inner_diameter = 0.69999999999999996
-        primary_color = "primary"
-        ring_opacity = 0.80000000000000004
-        rotation_speed = 0.0
-        secondary_color = "secondary"
-        sensitivity = 1.0
-        visualization_mode = "bars_rings"
-        wave_thickness = 1.0
-
-    [desktop_widgets.widget.desktop-widget-0000000000000009]
-    box_height = 672.0
-    box_width = 688.0
-    cx = 683.0
-    cy = 384.0
-    flip_x = true
-    output = "DP-1"
-    placement_height = 768.0
-    placement_width = 1366.0
-    rotation = -0.0
-    type = "fancy_audio_visualizer"
-
-        [desktop_widgets.widget.desktop-widget-0000000000000009.settings]
-        background = false
-        background_color = "surface"
-        background_opacity = 0.80000000000000004
-        background_padding = 10
-        background_radius = 12
-        bar_width = 0.59999999999999998
-        bloom_intensity = 0.5
-        fade_when_idle = true
-        inner_diameter = 0.69999999999999996
-        primary_color = "primary"
-        ring_opacity = 0.80000000000000004
-        rotation_speed = 0.0
-        secondary_color = "secondary"
-        sensitivity = 1.0
-        visualization_mode = "bars"
-        wave_thickness = 1.0
 
 [dock]
 auto_hide = true
@@ -805,12 +696,12 @@ builtin = "Rosé Pine"
 community_palette = "Everforest Material"
 custom_palette = "Nightfox"
 mode = "dark"
-source = "custom"
-wallpaper_scheme = "m3-tonal-spot"
+source = "wallpaper"
+wallpaper_scheme = "m3-fruit-salad"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "hyprland", "kcolorscheme", "kitty", "qt", "starship" ]
-    community_ids = [ "tauon", "pywalfox", "neovim", "vscode", "zathura", "hyprtoolkit", "papirus-icons", "bat", "lazygit", "yazi" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "qt", "starship" ]
+    community_ids = [ "tauon", "pywalfox", "vscode", "fastfetch", "zathura", "hyprtoolkit", "papirus-icons", "bat", "yazi" ]
 
 [wallpaper]
 directory_dark = "/home/dungeonguard/Pictures/Wallpapers/Dark"
@@ -819,13 +710,13 @@ transition = [ "disc", "fade", "honeycomb", "wipe", "zoom" ]
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wp12211591-cozy-pc-wallpapers_upscayl_2x_digital-art-4x.png"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/dark-style-sky-nighttime.jpg"
 
     [wallpaper.last]
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wp12211591-cozy-pc-wallpapers_upscayl_2x_digital-art-4x.png"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/dark-style-sky-nighttime.jpg"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/wp12211591-cozy-pc-wallpapers_upscayl_2x_digital-art-4x.png"
+    path = "/home/dungeonguard/Pictures/Wallpapers/Dark/dark-style-sky-nighttime.jpg"
 
     [[wallpaper.favorite]]
     palette_source = "wallpaper"
@@ -914,12 +805,13 @@ title_scroll = "on_hover"
 
 [widget.audio_visualizer]
 color_2 = "tertiary"
-interactive = false
 width = 125
+
+    [widget.audio_visualizer.actions]
+    left = "panel-toggle control-center media"
 
 [widget.clipboard]
 color = "on_surface"
-enabled = true
 
 [widget.clock]
 format = "{:%I:%M%p}"
@@ -946,6 +838,9 @@ color = "tertiary"
 [widget.notifications]
 color = "on_surface"
 hide_when_no_unread = true
+
+[widget.session]
+color = "error"
 
 [widget.spacer_1]
 type = "spacer"
